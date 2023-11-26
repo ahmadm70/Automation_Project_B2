@@ -11,4 +11,7 @@ public class DocuportConstants {
     public static final String PASSWORD_PLACEHOLDER_DOCUPORT_LOGIN = "Password";
     public static final String ERROR_MESSAGE_USERNAME_DOCUPORT_LOGIN = "Please enter your username or email address";
     public static final String ERROR_MESSAGE_PASSWORD_DOCUPORT_LOGIN = "Please enter your password";
+    public static final String EXPECTED_RESET_PASSWORD_TEXT_DOCUPORT = "Reset password";
+    public static final String EXPECTED_RESET_PASSWORD_HINT_TEXT_DOCUPORT = "Enter the email address associated with your account";
+    public static final String EMAIL_FOR_RESET_PASSWORD_DOCUPORT = "forgotpasswordg1@gmail.com";
 }
