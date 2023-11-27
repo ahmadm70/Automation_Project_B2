@@ -14,7 +14,7 @@ public class T1LocatorsGetText {
         driver.get("https://beta.docuport.app/");
         driver.manage().window().maximize();
         WebElement username = driver.findElement(By.id("input-14"));
-        username.sendKeys(DocuportConstants.USERNAME_SUPERVISOR);
+        username.sendKeys(DocuportConstants.USERNAME_FOR_SUPERVISOR);
         WebElement loginButton = driver.findElement(By.className("v-btn__content"));
         loginButton.click();
         WebElement errorMessageForEmptyPassword = driver.findElement(By.className("v-messages__message"));
