@@ -17,8 +17,8 @@ public class Task1 {
         driver.get("https://beta.docuport.app/login");
         //Logging in
         Thread.sleep(1000);
-        driver.findElement(By.id("input-14")).sendKeys(DocuportConstants.USERNAME_SUPERVISOR +
-                Keys.TAB + DocuportConstants.PASSWORD_SUPERVISOR);
+        driver.findElement(By.id("input-14")).sendKeys(DocuportConstants.USERNAME_FOR_SUPERVISOR +
+                Keys.TAB + DocuportConstants.PASSWORD_FOR_LOGIN);
         Thread.sleep(1000);
         driver.findElement(By.cssSelector("button[type='submit']")).click();
         Thread.sleep(1000);
