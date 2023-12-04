@@ -13,7 +13,6 @@ import java.time.Duration;
 
 public class T6DropdownOptions {
     WebDriver driver;
-    String actual, expected;
     @BeforeMethod
     public void setUpMethod() {
         driver = WebDriverFactory.getDriver("chrome");
