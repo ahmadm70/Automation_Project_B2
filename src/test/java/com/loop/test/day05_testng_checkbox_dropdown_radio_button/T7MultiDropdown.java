@@ -16,7 +16,6 @@ import java.util.List;
 
 public class T7MultiDropdown {
     WebDriver driver;
-    String actual, expected;
     @BeforeMethod
     public void setUpMethod() {
         driver = WebDriverFactory.getDriver("chrome");
