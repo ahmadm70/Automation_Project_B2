@@ -1,9 +1,10 @@
 package com.loop.test.utilities;
 
 public class DocuportConstants {
-    public static final String USERNAME_FOR_SUPERVISOR = "b1g2_supervisor@gmail.com";
-    public static final String USERNAME_FOR_CLIENT = "b1g2_client@gmail.com";
     public static final String USERNAME_FOR_ADVISOR = "b1g2_advisor@gmail.com";
+    public static final String USERNAME_FOR_CLIENT = "b1g2_client@gmail.com";
+    public static final String USERNAME_FOR_EMPLOYEE = "b1g2_employee@gmail.com";
+    public static final String USERNAME_FOR_SUPERVISOR = "b1g2_supervisor@gmail.com";
     public static final String PASSWORD_FOR_LOGIN = "Group2";
     public static final String ERROR_MESSAGE_FOR_EMPTY_PASSWORD = "Please enter your password";
     public static final String LOGO_DOCUPORT = "Docuport";
@@ -16,4 +17,8 @@ public class DocuportConstants {
     public static final String EXPECTED_RESET_PASSWORD_TEXT_DOCUPORT = "Reset password";
     public static final String EXPECTED_RESET_PASSWORD_HINT_TEXT_DOCUPORT = "Enter the email address associated with your account";
     public static final String EMAIL_FOR_RESET_PASSWORD_DOCUPORT = "forgotpasswordg1@gmail.com";
+    public static final String ADVISOR = "advisor";
+    public static final String CLIENT = "client";
+    public static final String EMPLOYEE = "employee";
+    public static final String SUPERVISOR = "supervisor";
 }
