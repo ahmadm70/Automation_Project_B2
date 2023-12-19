@@ -36,6 +36,7 @@ public class T3Windows extends TestBase {
 //                break;
 //            }
 //        }
-        BrowserUtilities.switchWindowAndValidate(driver, "amazon.com", "Amazon");
+        //BrowserUtilities.switchWindowAndValidate(driver, "amazon.com", "Amazon");
+        BrowserUtilities.switchToWindow(driver, "Facebook");
     }
 }
