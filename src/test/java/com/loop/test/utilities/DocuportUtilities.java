@@ -10,15 +10,16 @@ import java.util.InputMismatchException;
 public class DocuportUtilities {
     /**
      * Logs in to the docuport application
-     * @param driver, which initialized in TestBase class
-     * @param role, comes from DocuportConstants
+     * @parameter driver, which initialized in TestBase class
+     * @parameter role, comes from DocuportConstants
      * @author Ahmad
      */
     public static void login(WebDriver driver, String role) throws InterruptedException {
-        driver.get("https://beta.docuport.app/");
-        WebElement username = driver.findElement(By.xpath("//label[contains(text(),'Username or email')]//following-sibling::input"));
-        WebElement password = driver.findElement(By.xpath("//label[contains(text(),'Password')]//following-sibling::input"));
-        WebElement loginButton = driver.findElement(By.xpath("//button[@type='submit']"));
+        //driver.get("https://beta.docuport.app/");
+        Driver.getDriver().get(ConfigurationReader.getProperty("env"));
+        WebElement username = Driver.getDriver().findElement(By.xpath("//label[contains(text(),'Username or email')]//following-sibling::input"));
+        WebElement password = Driver.getDriver().findElement(By.xpath("//label[contains(text(),'Password')]//following-sibling::input"));
+        WebElement loginButton = Driver.getDriver().findElement(By.xpath("//button[@type='submit']"));
         switch(role.toLowerCase()) {
             case "advisor":
                 username.sendKeys(DocuportConstants.USERNAME_FOR_ADVISOR);
@@ -41,20 +42,20 @@ public class DocuportUtilities {
         loginButton.click();
         Thread.sleep(2000);
         if (role.equalsIgnoreCase("client")) {
-            WebElement continueButton = driver.findElement(By.xpath("//button[@type='submit']"));
+            WebElement continueButton = Driver.getDriver().findElement(By.xpath("//button[@type='submit']"));
             continueButton.click();
         }
     }
 
     /**
      * Logs out from the docuport application
-     * @param driver
+     * @parameter driver
      * @author Ahmad
      */
     public static void logout(WebDriver driver) {
-        WebElement userIcon = driver.findElement(By.xpath("//div[@class='v-avatar primary']"));
+        WebElement userIcon = Driver.getDriver().findElement(By.xpath("//div[@class='v-avatar primary']"));
         userIcon.click();
-        WebElement logOutButton = driver.findElement(By.xpath("//span[contains(text(),'Log out')]"));
+        WebElement logOutButton = Driver.getDriver().findElement(By.xpath("//span[contains(text(),'Log out')]"));
         logOutButton.click();
     }
 }
