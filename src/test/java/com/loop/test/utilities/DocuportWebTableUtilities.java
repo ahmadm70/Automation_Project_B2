@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class DocuportWebTableUtilities {
     /**
-     * returns any field from table by given email
+     * Returns any field from table by given email
      * @param driver
      * @param email
      * @param field
