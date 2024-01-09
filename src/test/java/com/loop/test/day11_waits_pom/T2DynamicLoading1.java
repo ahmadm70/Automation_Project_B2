@@ -27,6 +27,7 @@ public class T2DynamicLoading1 {
     @BeforeMethod
     public void setUpMethod() {
         loopPracticeDynamicLoadingPage1 = new LoopPracticeDynamicLoadingPage1();
+        Driver.getDriver().get(ConfigurationReader.getProperty("loopcamp.url"));
         action = new Actions(Driver.getDriver());
     }
     @AfterMethod
@@ -35,7 +36,7 @@ public class T2DynamicLoading1 {
     }
     @Test
     public void dynamicLoading1() {
-        BrowserUtilities.loopLinkClick("Dynamic Loading");
+        BrowserUtilities.loopLinkClick("Dynamic Loading");      //TODO - Test is being failed
         BrowserUtilities.waitForClickable(loopPracticeDynamicLoadingPage1.dynamicLoading1, 5).click();
         BrowserUtilities.waitForClickable(loopPracticeDynamicLoadingPage1.startButton, 5).click();
         BrowserUtilities.waitForInvisibility(loopPracticeDynamicLoadingPage1.loadingBar, 10);
