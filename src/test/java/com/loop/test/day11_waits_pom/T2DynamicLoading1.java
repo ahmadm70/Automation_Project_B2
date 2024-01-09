@@ -36,7 +36,7 @@ public class T2DynamicLoading1 {
     }
     @Test
     public void dynamicLoading1() {
-        BrowserUtilities.loopLinkClick("Dynamic Loading");      //TODO - Test is being failed
+        BrowserUtilities.loopLinkClick("Dynamic Loading");
         BrowserUtilities.waitForClickable(loopPracticeDynamicLoadingPage1.dynamicLoading1, 5).click();
         BrowserUtilities.waitForClickable(loopPracticeDynamicLoadingPage1.startButton, 5).click();
         BrowserUtilities.waitForInvisibility(loopPracticeDynamicLoadingPage1.loadingBar, 10);
